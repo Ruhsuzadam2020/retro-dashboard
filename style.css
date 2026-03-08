@@ -1,0 +1,103 @@
+/* Genel Ayarlar */
+body {
+    background-color: #000;
+    /* Yıldızlı arka plan görseli istersen buraya ekleyebilirsin */
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3c4NDU2Y2NsYWxqMThjODh0cTF1bWJncnB1bTU2MG80aHF3ZnlpdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif'); 
+    color: #00FFFF; /* Turkuaz retro yazı rengi */
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+/* WordArt Tarzı Başlık */
+.wordart-title {
+    text-align: center;
+    font-size: 3em;
+    color: #4b0082;
+    text-shadow: 3px 3px 0px #000, 5px 5px 0px #00ced1;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+/* Header & Marquee */
+.header {
+    border-bottom: 3px double #fff;
+    padding: 10px;
+}
+
+marquee {
+    background: #000080; /* Eski Windows laciverti */
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    border-right: 2px ridge #ffffff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-item {
+    margin-bottom: 25px;
+}
+
+.nav-item a {
+    color: #00FFFF;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.nav-item p {
+    color: #FFFF00; /* Sarı alt açıklamalar */
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+/* Ana İçerik Bölgesi */
+.content {
+    flex: 1;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.welcome-banner h2 {
+    color: #00FF00; /* Parlak yeşil */
+    text-decoration: underline;
+}
+
+/* Yanıp Sönen Yazı Efekti */
+.blink {
+    animation: blinker 1s linear infinite;
+    color: #FF00FF;
+    font-weight: bold;
+}
+
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+
+.counter {
+    background: #000;
+    border: 1px solid #fff;
+    padding: 2px 5px;
+    color: red;
+    font-family: 'Digital-7', sans-serif; /* Eğer varsa dijital font */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    border-top: 2px ridge #fff;
+    padding: 10px;
+    font-size: 0.7em;
+}

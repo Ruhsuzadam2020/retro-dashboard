@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Benim Retro Dünyam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <marquee scrollamount="5">★★★ DÜNYAMA HOŞ GELDİNİZ ★★★ SİTEMİ GEZDİĞİNİZ İÇİN TEŞEKKÜRLER ★★★</marquee>
+        <h1 class="wordart-title">YUSUF NUMAN ESEN</h1>
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <div class="nav-item">
+                <a href="#">Hakkımda</a>
+                <p>Kim olduğumu öğren</p>
+            </div>
+            <div class="nav-item">
+                <a href="#">Projelerim</a>
+                <p>Kod ve sanat</p>
+            </div>
+            <div class="nav-item">
+                <a href="#">Bağlantılar</a>
+                <p>Favori sitelerim</p>
+            </div>
+            <div class="nav-item">
+                <a href="#">Ziyaretçi Defteri</a>
+                <p>İz bırak!</p>
+            </div>
+            
+            <div class="status-box">
+                <p>Durum: Çevrimiçi</p>
+                <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDd3Y3NxYW44dGkzNDN5OWRubHF5a214bnJxbmlkcGN5bXdmeHIzaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pNx09ajeVCJ3O/giphy.gif" width="50" alt="retro-icon">
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="welcome-banner">
+                <h2>Selam İnternet Gezgini!</h2>
+                <p>Ben Yusuf Numan ESEN, bu benim dijital kalem. Burada 90'lar ruhunu yaşatıyorum. html ve Java ile ilgileniyorum. Sorun olursa mesaj tahtasına yaz. İYİ EĞLENCELER!</p>
+            </div>
+
+            <hr>
+
+            <div class="stats">
+                <h3>İstatistikler</h3>
+                <ul>
+                
+                    <li>Müzik: <span class="blink">Şu an çalıyor...</span></li>
+                </ul>
+            </div>
+
+            <div class="music-player">
+                 <p>Şu an çalıyor: Berserk.mp3</p>
+                 <audio id="myAudio" loop controls autoplay>
+                  <source src="music.mp3" type="audio/mpeg">
+                 Tarayıcınız müzik çalma özelliğini desteklemiyor.
+               </audio>
+            </div>
+
+            <script>
+                   document.body.addEventListener('click', function() {
+                   var audio = document.getElementById("myAudio");
+               audio.play();
+             }, { once: true });
+             </script>
+
+            <center>
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjZ6Y3oxeHhlZzF5NmZ3NmtsbGFyNHl1N2p0YXk5YjBxYjUzY3FtNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f0tufxEr372ZLuA07V/giphy.gif" alt="yapım aşamasında">
+            </center>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Best viewed in 800x600 resolution with Internet Explorer 5.0</p>
+    </footer>
+
+</body>
+</html>
