@@ -1,15 +1,15 @@
-/* Genel Ayarlar */
+
 body {
     background-color: #000;
-    /* Yıldızlı arka plan görseli istersen buraya ekleyebilirsin */
+    
     background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3c4NDU2Y2NsYWxqMThjODh0cTF1bWJncnB1bTU2MG80aHF3ZnlpdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FlodpfQUBSp20/giphy.gif'); 
-    color: #00FFFF; /* Turkuaz retro yazı rengi */
+    color: #00FFFF; 
     font-family: "Courier New", Courier, monospace;
     margin: 0;
     padding: 0;
 }
 
-/* WordArt Tarzı Başlık */
+
 .wordart-title {
     text-align: center;
     font-size: 3em;
@@ -19,26 +19,26 @@ body {
     margin: 10px 0;
 }
 
-/* Header & Marquee */
+
 .header {
     border-bottom: 3px double #fff;
     padding: 10px;
 }
 
 marquee {
-    background: #000080; /* Eski Windows laciverti */
+    background: #000080; 
     color: white;
     font-weight: bold;
     padding: 5px;
 }
 
-/* Layout */
+
 .container {
     display: flex;
     min-height: 80vh;
 }
 
-/* Sidebar */
+
 .sidebar {
     width: 200px;
     border-right: 2px ridge #ffffff;
@@ -58,12 +58,12 @@ marquee {
 }
 
 .nav-item p {
-    color: #FFFF00; /* Sarı alt açıklamalar */
+    color: #FFFF00; 
     font-size: 0.8em;
     margin: 5px 0;
 }
 
-/* Ana İçerik Bölgesi */
+
 .content {
     flex: 1;
     padding: 30px;
@@ -71,11 +71,11 @@ marquee {
 }
 
 .welcome-banner h2 {
-    color: #00FF00; /* Parlak yeşil */
+    color: #00FF00; 
     text-decoration: underline;
 }
 
-/* Yanıp Sönen Yazı Efekti */
+
 .blink {
     animation: blinker 1s linear infinite;
     color: #FF00FF;
@@ -91,13 +91,98 @@ marquee {
     border: 1px solid #fff;
     padding: 2px 5px;
     color: red;
-    font-family: 'Digital-7', sans-serif; /* Eğer varsa dijital font */
+    font-family: 'Digital-7', sans-serif; 
 }
 
-/* Footer */
+
 .footer {
     text-align: center;
     border-top: 2px ridge #fff;
     padding: 10px;
     font-size: 0.7em;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #c0c0c0; /* Klasik gri */
+    border: 2px outset #fff;
+    padding: 5px;
+    box-shadow: 2px 2px 0px #000;
+    z-index: 1000;
+    font-size: 10px;
+    color: #000;
+}
+
+.music-player p {
+    margin: 0 0 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+audio {
+    height: 30px;
+    width: 200px;
+}
+
+
+@media (max-width: 768px) {
+   
+    .container {
+        flex-direction: column;
+    }
+
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #555;
+        padding: 10px;
+        display: block;
+    }
+
+    
+    .nav-item {
+        margin-bottom: 15px;
+        border-bottom: 1px dashed #444;
+        padding-bottom: 10px;
+    }
+
+  
+    .content {
+        padding: 15px;
+    }
+
+   
+    .wordart-title {
+        font-size: 1.8em;
+        letter-spacing: 0px;
+    }
+
+   
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .music-player {
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    audio {
+        width: 100%; 
+    }
+
+   
+    marquee {
+        font-size: 10px;
+    }
 }
