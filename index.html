@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Benim Retro Dünyam</title>
+    <title>Yusuf Numan ESEN | Retro Dünyam</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,20 +15,29 @@
     <div class="container">
         <nav class="sidebar">
             <div class="nav-item">
-                <a href="#">Hakkımda</a>
-                <p>Kim olduğumu öğren</p>
-                <p>Ben Yusu Numan ESEN.Ankara Üniversitesi Yazılım Mühendisliği bölümü 3. sınıf öğrencisiyim,mikroişlemciler ve yapay zeka ile ilgili çözümlerle ilgileniyorum</p>
+                <a href="#hakkimda">Hakkımda</a>
+                <p><strong>Kim olduğumu öğren:</strong></p>
+                <p>Ankara Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisiyim. Mikroişlemciler ve yapay zeka çözümleriyle ilgileniyorum.</p>
             </div>
+
             <div class="nav-item">
                 <a href="#">Projelerim</a>
                 <p>Kod ve sanat</p>
-                <p>https://github.com/repos?q=owner%3A%40me</p>
+                <p><a href="https://github.com/repos?q=owner%3A%40me" target="_blank">>> GitHub Profilim</a></p>
             </div>
+
             <div class="nav-item">
                 <a href="#">Bağlantılar</a>
-                <p>www.linkedin.com/in/yusuf-numan-esen-63b8581b4</p>
-                <p>numanyusuf14@gmail.com</p>
+                <p><a href="https://www.linkedin.com/in/yusuf-numan-esen-63b8581b4" target="_blank">>> LinkedIn Profilim</a></p>
+                <p><a href="mailto:numanyusuf14@gmail.com">>> Email Gönder</a></p>
             </div>
+
+            <div class="nav-item">
+                <a href="#">Özgeçmiş</a>
+                <p>CV'mi inceleyin:</p>
+                <p><a href="CV.pdf" target="_blank">[ CV Görüntüle ]</a></p>
+            </div>
+
             <div class="nav-item">
                 <a href="#">Ziyaretçi Defteri</a>
                 <p>İz bırak!</p>
@@ -41,38 +50,30 @@
         </nav>
 
         <main class="content">
-            <div class="welcome-banner">
+            <div class="welcome-banner" id="hakkimda">
                 <h2>Selam İnternet Gezgini!</h2>
-                <p>Ben Yusuf Numan ESEN, bu benim dijital kalem. Burada 90'lar ruhunu yaşatıyorum. html ve Java ile ilgileniyorum. Sorun olursa mesaj tahtasına yaz. İYİ EĞLENCELER!</p>
+                <p>Ben Yusuf Numan ESEN, bu benim dijital kalem. Burada 90'lar ruhunu yaşatıyorum. HTML, Java ve Mikroişlemciler ile ilgileniyorum.</p>
             </div>
 
             <hr>
 
             <div class="stats">
-                <h3>İstatistikler</h3>
+                <h3>Sistem Bilgileri</h3>
                 <ul>
-                
-                    <li>Müzik: <span class="blink">Şu an çalıyor...</span></li>
+                    <li>Müzik: <span class="blink">Berserk.mp3 - Çalıyor...</span></li>
                 </ul>
             </div>
 
             <div class="music-player">
-                 <p>Şu an çalıyor: Berserk.mp3</p>
-                 <audio id="myAudio" loop controls autoplay>
-                  <source src="music.mp3" type="audio/mpeg">
-                 Tarayıcınız müzik çalma özelliğini desteklemiyor.
-               </audio>
+                 <p>PLAYER v1.0</p>
+                 <audio id="myAudio" loop controls>
+                    <source src="music.mp3" type="audio/mpeg">
+                    Tarayıcınız müzik çalma özelliğini desteklemiyor.
+                 </audio>
             </div>
 
-            <script>
-                   document.body.addEventListener('click', function() {
-                   var audio = document.getElementById("myAudio");
-               audio.play();
-             }, { once: true });
-             </script>
-
             <center>
-                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjZ6Y3oxeHhlZzF5NmZ3NmtsbGFyNHl1N2p0YXk5YjBxYjUzY3FtNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f0tufxEr372ZLuA07V/giphy.gif" alt="yapım aşamasında">
+                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjZ6Y3oxeHhlZzF5NmZ3NmtsbGFyNHl1N2p0YXk5YjBxYjUzY3FtNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f0tufxEr372ZLuA07V/giphy.gif" alt="yapım aşamasında" style="margin-top: 20px;">
             </center>
         </main>
     </div>
@@ -80,6 +81,13 @@
     <footer class="footer">
         <p>Best viewed in 800x600 resolution with Internet Explorer 5.0</p>
     </footer>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }, { once: true });
+    </script>
 
 </body>
 </html>
