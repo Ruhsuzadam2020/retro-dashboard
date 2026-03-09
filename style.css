@@ -178,8 +178,10 @@ audio {
     }
 
     audio {
-        width: 100%; 
-    }
+        display: none;
+}
+        
+    
 
    
     marquee {
